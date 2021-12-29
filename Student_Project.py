@@ -1,21 +1,21 @@
-#Import module
-#Import module
+import turtle
+import random
 
-def #Write the function name():
-    #Take user input for radius
-    #Take user input for color
+def draw_circle():
+    radius=int(input("enter the value of radius of ballon"))
+    color=input("enter the color of pen")
     turtle.penup()
-    turtle.fillcolor(#Pass the variable color)
-    turtle.goto(random.randint(#Provide the range)+20,random.randint(#Provide the range)+20)
-    #Begin with the color fill
-    turtle.circle(#Fill the value)
-    #End the color fill
+    turtle.fillcolor(color)
+    turtle.goto(random.randint(-150,150)+20,random.randint(-150,150)+20)
+    (turtle.begin_fill())
+    turtle.circle(radius)
+    (turtle.end_fill())
     turtle.pendown()
     turtle.pencolor("black")
     turtle.goto(0,-200)
     turtle.stamp()
 
-#Call the function
-#Call the function
-#Call the function
-#Call the function
+draw_circle()
+draw_circle()
+draw_circle()
+draw_circle()
